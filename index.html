@@ -62,6 +62,8 @@
     margin-bottom: 10px;
     background-color: #03274a; /* Dark blue background color */
     color: #fff; /* White text color */
+    display: block; /* Ensure anchor tags behave like block-level elements */
+    text-decoration: none; /* Remove underline */
   }
   .option:hover {
     background-color: #021527; /* Darker blue on hover */
@@ -94,18 +96,9 @@
   <div class="right">
     <h2 style="margin-left: 260px;font-size: xx-large;">LOGIN</h2>
     <div class="options" style="margin-left: 280px;">
-      <div class="option" id="option1">Organisation</div>
-      <div class="option" id="option2">SEmployee</div>
+      <a href=".\index2.html" class="option">Organisation</a>
+      <a href=".\index1.html" class="option">Employee</a>
     </div>
   </div>
-
-<script>
-  document.getElementById('option1').addEventListener('click', function() {
-    window.location.href = 'https://www.example.com/option1'; // Replace 'https://www.example.com/option1' with the actual link for Option 1
-  });
-  document.getElementById('option2').addEventListener('click', function() {
-    window.location.href = 'https://www.example.com/option2'; // Replace 'https://www.example.com/option2' with the actual link for Option 2
-  });
-</script>
 </body>
 </html>
